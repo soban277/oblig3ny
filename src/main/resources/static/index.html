@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Billettregister</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">>
+    <style>
+        label {
+            display: inline-block;
+            text-align: right;
+            width: 80px;
+        }
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+
+<h1>Bestilling av kinobilletter</h1>
+
+<p>Velg film:</p>
+<select id="film">
+    <option>Velg film her</option>
+    <option>Up</option>
+    <option>Inception</option>
+    <option>Interstellar</option>
+    <option>Scream</option>
+</select>
+
+
+<br>
+<br>
+
+
+<label>Antall </label>  <input type="number"  id="antall" min="0"> <span id="feilAntall"> </span>
+
+<br>
+<br>
+
+<label> Fornavn </label><input type="text" id="fornavn"> <span id="feilFornavn"> </span>
+
+<br>
+<br>
+
+<label>Etternavn </label> <input type="text" id="etternavn"> <span id="feilEtternavn"> </span>
+
+<br>
+<br>
+
+<label> Telefonnr </label> <input type="text" id="telefonnr"> <span id="feilTelefonnr"> </span>
+
+
+<br>
+<br>
+
+<label> Epost </label> <input type="text" id="epost"> <span id="feilEpost"> </span>
+
+<br>
+<br>
+
+
+<div>
+    <button onclick="kjopBillett()">  Kjøp billett</button>
+</div>
+
+
+<br>
+<br>
+
+
+<div>
+    <h2> Alle billetter</h2>
+</div>
+
+<p id="Billett"></p>
+
+<div>
+    <button onclick="slettAlle()"> Slett alle billetter</button>
+</div>
+
+
+
+<script type="application/javascript" src="index.js">
+</script>
+
+
+</body>
+</html>
